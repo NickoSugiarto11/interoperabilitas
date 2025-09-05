@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3100;
 
-let idSeq = 4;
+let idSeq = 3;
 
 //Middleware data
 app.use(express.json());
@@ -128,4 +128,10 @@ app.delete('/directors/:id', (req, res) => {
     }
     directors.splice(directorIndex, 1);
     res.status(204).send();
+});
+
+//Error handler terpusat
+app.use((err, req, res, next) => {
+    console.error('[ERROR]', err);
+    res.status(500).json({ error: 'Terjadi kesalahan pada server' });
 });
