@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "b027102c-2430-4fbf-a5a0-fa7d20bc8923",
+		"name": "Test API Directors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47979685",
+		"_collection_link": "https://nicko9995sgt-7994784.postman.co/workspace/Nicko-S.'s-Workspace~0dc937f0-6d4a-41fd-851f-bd2027d26543/collection/47979685-b027102c-2430-4fbf-a5a0-fa7d20bc8923?action=share&source=collection_link&creator=47979685"
+	},
+	"item": [
+		{
+			"name": "All Directors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3100/directors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"directors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directors by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Directors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Nicko Sugiarto\",\r\n        \"birthYear\": 2006\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/directors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"directors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"Frank Darabont\",\r\n        \"birthYear\": 1959\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/directors/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"directors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"name\": \"Frank Darabont\",\r\n        \"birthYear\": 1959\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3100/directors/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"directors",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Directors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Nicko Sugiarto\",\r\n        \"birthYear\": 2006\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3100/directors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"directors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directors by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Nicko Sugiarto\",\r\n        \"birthYear\": 2006\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3100/directors/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"directors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nicko Sugiarto\",\r\n    \"birthYear\": 2006\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/directors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"directors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directors",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/directors/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"directors",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directors",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3100/directors/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"directors",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
